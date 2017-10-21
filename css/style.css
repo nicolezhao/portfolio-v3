@@ -1,0 +1,102 @@
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body {
+	margin: 8vmax 0;
+	font-family: 'Muli', sans-serif;
+	font-weight: lighter;
+	color: #4F4F4F;
+}
+
+h1 {
+	font-size: 2.4rem;
+    margin: 1.5em 0 1em 0;
+}
+
+p {
+	line-height: 170%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.emoji {
+	font-size: inherit;
+	width: 1.2em;
+}
+
+.work {
+	background-color: white; 
+	border-radius: 4px;
+    padding: 24px;
+    padding-bottom: 5px;
+    padding-top: 70px;
+    border: 1px solid hsl(0, 0%, 90%);
+    margin: 24px 0;
+    transition: .2s ease-out;
+}
+
+.work:hover {
+	transform: scale(1.02);
+}
+
+.projects {
+	background-color: white; 
+	border-radius: 4px;
+    padding: 24px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    border: 1px solid hsl(0, 0%, 90%);
+    margin: 24px 0;
+    transition: .2s ease-out;
+    color: grey;
+}
+
+#shopify {
+	color: #C2A9E4;
+}
+
+#shopify p {
+	color: #4F4F4F;
+}
+
+#shopify:hover{
+	background-color: #C2A9E4;
+	color: white;
+}
+
+#viryl {
+	color: #96E4A4;
+}
+
+#viryl p {
+	color: #4F4F4F;
+}
+
+#viryl:hover {
+	background-color: #96E4A4;
+	color: white;
+}
+
+.projects:hover {
+	background-color: lightgrey;
+	color: white;
+}
+
+#me-pic {
+	margin-top: 1.5rem;
+	width: 10em;
+}
+
