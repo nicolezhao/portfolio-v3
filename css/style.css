@@ -22,19 +22,39 @@ p {
 
 a {
     text-decoration: none !important;
+    color: #4F4F4F;
 }
 
 article, aside, footer, header, hgroup, main, nav, section {
     display: block;
 }
 
+footer {
+	text-align: center;
+}
+
 * {
     box-sizing: border-box;
+}
+
+hr {
+	margin: 5em 0 2em 0;
+	border-top: 1px solid #E5E5E5;
+}
+
+u {    
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
 }
 
 .emoji {
 	font-size: inherit;
 	width: 1.2em;
+}
+
+.emoji-cool-things {
+	font-size: inherit;
+	width: 8em;
 }
 
 .work {
@@ -64,12 +84,26 @@ article, aside, footer, header, hgroup, main, nav, section {
     color: grey;
 }
 
+.projects h3 {
+	color: #95E7D0;
+}
+
+.projects:hover {
+	transform: scale(1.01);
+	background-color: #95E7D0;
+}
+
+.projects:hover h3 {
+	color: white;
+}
+
+
 #shopify {
 	color: #C2A9E4;
 }
 
 #shopify p {
-	color: #4F4F4F;
+	color: grey;
 }
 
 #shopify:hover{
@@ -82,7 +116,7 @@ article, aside, footer, header, hgroup, main, nav, section {
 }
 
 #viryl p {
-	color: #4F4F4F;
+	color: grey;
 }
 
 #viryl:hover {
@@ -90,13 +124,49 @@ article, aside, footer, header, hgroup, main, nav, section {
 	color: white;
 }
 
-.projects:hover {
-	background-color: lightgrey;
-	color: white;
-}
-
 #me-pic {
 	margin-top: 1.5rem;
 	width: 10em;
 }
+
+.footer-links {
+	color: #4F4F4F;
+}
+
+.footer-links:hover, .footer-links:hover u{
+	color: #7DE7CA;
+	transition: .15s ease-out;
+	border-bottom: 1px dotted #7DE7CA;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.wrap    { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}  
+
+.flex-item-1 {
+	width: 100px;
+  	height: 100px;
+  	line-height: 100px;
+}
+
+.flex-item-2 {
+	width: 300px;
+	height: 100px;
+	line-height: 100px;
+}
+
 
