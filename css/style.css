@@ -5,10 +5,10 @@ main {
 }
 
 body {
-	margin: 8vmax 0;
+	margin: 0;
 	font-family: 'Muli', sans-serif;
 	font-weight: lighter;
-	color: #4F4F4F;
+	/*color: #4F4F4F;*/
 }
 
 h1 {
@@ -47,6 +47,25 @@ u {
     text-decoration: none;
 }
 
+body, html {
+	height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://i.pinimg.com/originals/40/63/0b/40630bee79dfa71d291fae4c4ba52ca2.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .emoji {
 	font-size: inherit;
 	width: 1.2em;
@@ -61,11 +80,14 @@ u {
 	background-color: white; 
 	border-radius: 4px;
     padding: 24px;
-    padding-bottom: 5px;
-    padding-top: 70px;
+    padding-top: 5px;
+    padding-bottom: 70px;
     border: 1px solid hsl(0, 0%, 90%);
     margin: 24px 0;
     transition: .2s ease-out;
+/*    width: 48%;
+    margin-right: 0px;
+    display: inline-block;*/
 }
 
 .work:hover {
@@ -97,6 +119,9 @@ u {
 	color: white;
 }
 
+#work-section {
+	display: inline;
+}
 
 #shopify {
 	color: #C2A9E4;
@@ -128,6 +153,19 @@ u {
 	margin-top: 1.5rem;
 	width: 10em;
 }
+
+#hello-emoji{
+	margin-top: 100px;
+	width: 3rem;
+	position: fixed;
+	z-index: 2;
+	.fix-emoji{
+		width: 5rem;
+		position: fixed;
+		z-index: -1;
+	}
+}
+
 
 .footer-links {
 	color: #4F4F4F;
@@ -168,5 +206,15 @@ u {
 	height: 100px;
 	line-height: 100px;
 }
+
+
+
+
+
+
+
+
+
+
 
 

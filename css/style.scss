@@ -1,0 +1,219 @@
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body {
+	margin: 0;
+	font-family: 'Muli', sans-serif;
+	font-weight: lighter;
+	margin-bottom: 100px;
+	/*color: #4F4F4F;*/
+}
+
+h1 {
+	font-size: 2.4rem;
+    margin: 1.5em 0 1em 0;
+}
+
+p {
+	line-height: 170%;
+}
+
+a {
+    text-decoration: none !important;
+    color: #4F4F4F;
+}
+
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+footer {
+	text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+hr {
+	margin: 5em 0 2em 0;
+	border-top: 1px solid #E5E5E5;
+}
+
+u {    
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+}
+
+body, html {
+	height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://i.pinimg.com/originals/40/63/0b/40630bee79dfa71d291fae4c4ba52ca2.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.emoji {
+	font-size: inherit;
+	width: 1.2em;
+}
+
+.emoji-cool-things {
+	font-size: inherit;
+	width: 8em;
+}
+
+.work {
+	background-color: white; 
+	border-radius: 4px;
+    padding: 24px;
+    padding-top: 5px;
+    padding-bottom: 70px;
+    border: 1px solid hsl(0, 0%, 90%);
+    margin: 24px 0;
+    transition: .2s ease-out;
+/*    width: 48%;
+    margin-right: 0px;
+    display: inline-block;*/
+}
+
+.work:hover {
+	transform: scale(1.02);
+}
+
+.projects {
+	background-color: white; 
+	border-radius: 4px;
+    padding: 24px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    border: 1px solid hsl(0, 0%, 90%);
+    margin: 24px 0;
+    transition: .2s ease-out;
+    color: grey;
+}
+
+.projects h3 {
+	color: #95E7D0;
+}
+
+.projects:hover {
+	transform: scale(1.01);
+	background-color: #95E7D0;
+}
+
+.projects:hover h3 {
+	color: white;
+}
+
+#work-section {
+	display: inline;
+}
+
+#shopify {
+	color: #C2A9E4;
+}
+
+#shopify p {
+	color: grey;
+}
+
+#shopify:hover{
+	background-color: #C2A9E4;
+	color: white;
+}
+
+#viryl {
+	color: #96E4A4;
+}
+
+#viryl p {
+	color: grey;
+}
+
+#viryl:hover {
+	background-color: #96E4A4;
+	color: white;
+}
+
+#me-pic {
+	margin-top: 1.5rem;
+	width: 10em;
+}
+
+#hello-emoji{
+	width: 3rem;
+	position: absolute;
+	left: 0;
+}
+
+.fixed {
+	width: 5rem;
+}
+
+
+.footer-links {
+	color: #4F4F4F;
+}
+
+.footer-links:hover, .footer-links:hover u{
+	color: #7DE7CA;
+	transition: .15s ease-out;
+	border-bottom: 1px dotted #7DE7CA;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.wrap    { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}  
+
+.flex-item-1 {
+	width: 100px;
+  	height: 100px;
+  	line-height: 100px;
+}
+
+.flex-item-2 {
+	width: 300px;
+	height: 100px;
+	line-height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

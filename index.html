@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Nicole Zhao</title>
     <meta charset=utf-8 >
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" > 
+    <link rel="stylesheet" href="css/style.scss" > 
     <link rel="icon" href="img/favicon1.png" type="image/x-icon">
+
 	</head>
+
+<!-- 	<div class="parallax">
+		<div id="name-title">
+			NICOLE ZHAO
+		</div>
+	</div> -->
 
 	<body> 
 		<main>
-			<img src="img/me.png" id="me-pic">
+			<img src="img/hi-there.gif" id="hello-emoji" class="hello-emoji">
 			<h1> Nicole Zhao </h1>
 			<p> Hi there! <img src="img/wave.png" class="emoji"> </p> 
 			<p> I'm a web developer and product designer studying Systems Design Engineering at the University of Waterloo. I'm looking to intern in the Summer with friendly peeps and a product that I love. </p>
 
 			<br>
 			<h3> <img src="img/suitcase.jpeg" class="emoji"> Where I've worked </h3>
-				<section>
+
+				<!-- <div id="work-section">
 					<a href="#">
 						<article class="work" id="shopify">
 							<h2> Shopify </h2>
 							<p> Front-end Developer | Fall 2017 Intern </p>
 						</article>
 					</a>
+					<a href="#">
+						<article class="work" id="viryl">
+							<h2> Viryl Technologies </h2>
+							<p> Web Developer | Winter 2017 Intern </p>
+						</article>
+					</a>
+				</div> -->
+
+				<section id="work-section">
+					<a href="#">
+						<article class="work" id="shopify">
+							<h2> Shopify </h2>
+							<p> Front-end Developer | Fall 2017 Intern </p>
+						</article>
+					</a>
+
 				</section>
 
 				<section>
@@ -34,14 +59,13 @@
 						</article>
 					</a>
 				</section>
-
 			<br>
 			<h3> <img src="img/laptop.png" class="emoji"> My projects </h3>
 				<section>
 					<a href="#">
 						<article class="projects">
-							<h3> Influencer Marketing Platform </h3>
-							<p> Marketplace for brands and influencers to conduct end-to-end campaign transactions </p>
+							<h3> IOF Influencers of Fashion </h3>
+							<p> Platform for brands and influencers to conduct end-to-end campaign transactions </p>
 						</article>
 					</a>
 				</section>
@@ -85,5 +109,20 @@
 			</footer>
 
 		</main>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script>
+		   $(document).ready(function(){
+			   $(window).bind('scroll', function() {
+			   var navHeight = $( window ).height() - 70;
+					 if ($(window).scrollTop() > navHeight) {
+						 $('#hello-emoji').addClass('fixed');
+					 }
+					 else {
+						 $('#hello-emoji').removeClass('fixed');
+					 }
+				});
+			});
+		</script>
 	</body>
 </html>
