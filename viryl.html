@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Nicole Zhao - Viryl Technologies</title>
+    <meta charset=utf-8 >
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.scss" > 
+    <link rel="icon" href="img/favicon1.png" type="image/x-icon">
+
+	</head>
+
+	<div id="viryl-header-div">
+		<img id="viryl-header-pic" src="img/viryl.jpg">
+	</div>
+
+	<body>	 
+		<main>
+			<a href="index.html"><img id="chev-back" src="img/chev.png"></a>
+			<h1 id="viryl-header"> Viryl Technologies </h1>
+			<p> Internship | Web Developer | Winter 2017 </p> 
+
+			<br>
+
+			<h3> Background</h3>
+			<p> With vinyl records being the fastest growing segment in the music industry, Viryl Technologies aims to create the world’s first fully-automatic, modernized record press. Based in Toronto, and partnered with worldwide industrial equipment supplier AXYZ International, Viryl Technologies has the support, global scale, industry knowledge, and technical ability to bring a modern solution to the vinyl industry.s </p>
+
+			<br>
+
+			<h3> Role </h3>
+			<p> As part of the software team, I took the lead in developing and designing a web portal where clients are able to monitor their press's performance. This included: </p>
+				<ul> 
+					<li>Writing scripts to read from the press's HMI</li>
+					<li>Designing and creating the back-end databases</li>
+					<li>Displaying the data in an ergonomic user interface</li>
+				</ul>
+			<p>I was fortunate to have designed the UI and built the functionaity from cradle to grave. My main contribution was the design, development, testing, and documenting of a support ticket system from raw sketch to production.</p>
+
+			<br> 
+
+			<h3> Project: Support Ticket System</h3>
+			<h4 id="viryl-subtitle"> Context </h4>
+				<p>We found that when handling client's requests, there would often be overlapping communication. The goal of this system is to encourage systematic communication with clients and avoid overlapping streams of contact. It allows tech support members to track and organize individual communication with clients and view previous contact the client has had with other tech support members.</p>
+
+			<br> 
+
+			<h4 id="viryl-subtitle"> Metrics </h4>
+			<p> To make sure we were able to measure our progress and success, we relied on the following metrics:</p>
+				<ul>
+					<li><i>Support hours spent helping clients:</i> minimize the ration of hours spent on support to number of clients.</li>
+					<li><i>Time spent on research:</i> make previous solutions available and the process repeatable</li>
+					<li><i>Lifetime per ticket: </i>reduce the time spent on each ticket.</li>
+				</ul>
+
+			<br>
+
+			<h4 id="viryl-subtitle"> Workflow </h4>
+			<p>I wanted to make sure that the support ticket system was organized and tech support members working on the ticket were clear on what their possible actions and constraints were. The workflow looks something like this:</p>
+
+			<br>
+
+			<h4 id="viryl-subtitle"> Implementation </h4>
+			<p>The support ticket system was separated into two components: the client-facing side and the tech support. The development from a sketch to the launch of version 1 spanned 2 months. This included iteration of UI design and back-end structure. Here is version 1:</p>
+				<h5>Tech Support-Facing</h5>
+
+				<h5>Client-Facing</h5>
+
+				<h5>Submission Form</h5>
+
+			<footer> 
+				<section> 
+					<hr>
+					<p> 
+						<a href="Nicole_Zhao_Resume.pdf" target="_blank" class="footer-links"><u>RESUME</u></a>&nbsp;&nbsp;&nbsp;
+						<a href="mailto:yy3zhao@edu.uwaterloo.ca" target="_blank" class="footer-links"><u>EMAIL</u></a>&nbsp;&nbsp;&nbsp;
+						<a href="https://github.com/nicolezhao" target="_blank" class="footer-links"><u>GITHUB</u></a>&nbsp;&nbsp;&nbsp;
+					</p>
+				</section>
+			</footer>
+
+		</main>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script>
+		   $(document).ready(function(){
+			   $(window).bind('scroll', function() {
+			   var navHeight = $( window ).height() - 70;
+					 if ($(window).scrollTop() > navHeight) {
+						 $('#hello-emoji').addClass('fixed');
+					 }
+					 else {
+						 $('#hello-emoji').removeClass('fixed');
+					 }
+				});
+			});
+		</script>
+	</body>
+</html>
