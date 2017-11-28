@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Nicole Zhao - Viryl Technologies</title>
+    <meta charset=utf-8 >
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.scss" > 
+    <link rel="icon" href="img/favicon1.png" type="image/x-icon">
+
+	</head>
+
+	<div id="viryl-header-div">
+		<img id="viryl-header-pic" src="img/shopify.png">
+	</div>
+
+	<body>	 
+		<main>
+			<a href="index.html"><img id="chev-back" src="img/chev.png"></a>
+			<h1 id="shopify-header"> Shopify </h1>
+			<p> Internship | Front-end Developer | Fall 2017 </p> 
+
+			<br>
+
+			<h3> Role</h3>
+			<p> During my time at Shopify, I worked as a front-end developer on the Social Channels team, working with designers, some PM folks, and other developers to improve the merchant experience of selling products through different social channels. We wanted to optimize UX flows and make the user journey consistent across all social sales channels. </p>
+			<p>For the first half of my internship, I shipped incremental feature changes to the Facebook, Messenger, and Pinterest channels’ merchant dashboards, focused on improving the merchant experience during the influx of Black Friday Cyber Monday sales. During the second half, I wanted to take on more of an product ownership role, and championed the redesign of a feature on the Facebook channel from cradle to grave. </p>
+
+			<br>
+
+			<h3> Team </h3>
+			<p>As a team, our mandate was to make the merchant’s experience of selling on Facebook, Pinterest, and Messenger intuitive, consistent, and efficient. Just to give a bit of Shopify context, You can use Shopify to sell your products online in an online store, on social media and online marketplaces, and using other online sales channels. The three primary channels I worked on: </p>
+				<ul> 
+					<li>Facebook lets merchants sell products on their Facebook page</li>
+					<li>Pinterest turns Pins of products int Buyable Pins </li>
+					<li>Messenger lets merchants sell products through chat</li>
+				</ul>
+			<p>I was fortunate to have designed the UI and built the functionaity from cradle to grave. My main contribution was the design, development, testing, and documenting of a support ticket system from raw sketch to production.</p>
+
+			<br> 
+
+			<h3> Project: Preview Component Redesign</h3>
+			<h4 id="shopify-subtitle"> Context </h4>
+				<p>One of the main features of the Facebook channel is allowing merchants to reorder how they want their collections to appear on Facebook and then previewing how it would look like on Facebook before publishing it for their customers to see. Here is what merchants currently see: </p>
+			<img src="shopify-assets/current-shop.png">
+			<img src="shopify-assets/current-publishing.png">
+
+			<br><br> 
+
+			<h4 id="shopify-subtitle"> Problem/Opportunity </h4>
+			<p> Since we aren’t able to pull Facebook’s ever-changing UI directly, the preview component, which was accurate when it was built, is now not an accurate representation of how their shop actually looks like on Facebook, it doesn’t always behave as expected, and is inconsistent across channel. Without aligning with the merchant’s mental map, the component interrupts the merchant’s workflow and erodes merchant trust.</p>
+			<p>Facebook’s hard-coded preview raises a bigger issue of how do we present accurate previews across channels. Since we aren’t able to pull directly off these platforms, a significant amount of resources would need to be dedicated to maintaining all previews whenever any of these platforms makes a change to their UI. The UI patterns used are showing their age and inability to scale past a certain complexity. </p>
+
+			<br>
+
+			<h4 id="shopify-subtitle"> Why is this worth solving? </h4>
+			<p>It was important to me that we were spending the right amount of time and resources and a feature that would impact merchants and align with Shopify’s company goals/product priorities. We shouldn’t be “setting and forgetting” our channels, and should be consistently working to maintain (and raise) our merchants’ trust. They should not be getting used to a bad component, expecting it to be inaccurate/broken. </p>
+			<p>Addressing Facebook’s preview component first will set a standard for how previews should be handled across channels, consistent layout and level of accuracy, even they don’t use the same component.</p>
+
+			<br>
+
+			<h4 id="shopify-subtitle"> Success Metrics </h4>
+			<p>Our north star metrics are <b>accuracy</b> and <b>consistency</b>. These goals will be measured as follows: </p>
+				<h5>Qualitatively:</h5>
+					<ul>
+						<li>Preview component reflects what is on Facebook or it’s clear that the design isn’t meant to be a one-to-one representation</li>
+						<li>Works on desktop and mobile </li>
+						<li>If merchant is not able to see their preview, or View on Facebook, or if their shop/page hasn’t yet been approved, or any related error, they should know what’s wrong and the steps to solving it (even if that’s just waiting)</li>
+						<li>Merchants should understand the purpose of the preview component (and the purpose of the page by the page name) right away, and each action should match the merchant’s mental model </li>
+					</ul>
+				<h5>Quantitatively:</h5>
+					<ul>
+						<li>Lower incidences of merchants asking support why their Facebook is not updated yet, or why the preview doesn’t look right, or any preview related concerns </li>
+						<li>Increase engagement with the component </li>
+						<li>Have a help doc that can answer all those questions and explain how the preview component behaves, including what we control and what Facebook’s algorithms  control </li>
+					</ul>
+
+			<br>
+
+			<h4 id="shopify-subtitle"> Data</h4>
+			<p>To make a data-driven decision, I wanted to first explore how the current preview component was being used, seeing where merchants were clicking and how many merchants were using each action on the page. From the data, it was clear that the Cancel button was not being used on the current UI, and would potentially justify removing it in the new UI. It also showed that merchants were toggling between mobile and desktop views, and we could not remove one or make it default to the device the merchant was on. </p>
+			<p>Most importantly, it showed us that we couldn’t burn the page component completely because people were using it!</p>
+
+			<img src="shopify-assets/data/data.png">
+			<img src="shopify-assets/data/data-labels.png">
+
+			<br><br>
+
+			<h4 id="shopify-subtitle"> Initial Sprint </h4>
+			<p>During the initial sprint, we outlined the user’s journey, mapped out the questions they could potentially ask at each stage to understand their pain points. Then chose 6 key merchant questions to focus on and made low fidelity sketches that are meant to solve those merchant questions. </p>
+
+			<img src="shopify-assets/initial-sprint/user-journey.jpg">
+			<img src="shopify-assets/initial-sprint/questions.jpg">
+			<img src="shopify-assets/initial-sprint/sketches.jpg">
+
+			<br><br>
+
+			<h4 id="shopify-subtitle"> Design V1 </h4>
+			<p>The first iteration of the design was to include the preview in a modal. Within that modal, merchants would be able to publish changes, and toggle between desktop and mobile. On mobile, preview would swipe left to a new preview page instead of a modal and to make more changes the merchant would swipe right to navigate back.  </p>
+			<h5>Pros:</h5>
+			<ul>
+				<li>The design would be responsive on both desktop and mobile. </li>
+				<li>Both views can be accessed through all devices — previews that don’t fit on the viewport can be viewed with side scroll </li>
+			</ul>
+			<h5>Cons:</h5>
+			<ul>
+				<li>The preview would still need to be hard coded in, which means resources would need to be put in to maintain the component to look like Facebook’s UI</li>
+				<li>This means that there will be periods of inaccuracy and since we can’t exactly replicate Facebook’s UI, the design is not abstract enough to be an abstract representation and not accurate enough to be a one-to-one preview. </li>
+			</ul>
+
+			<img src="shopify-assets/design-v1.png">
+			<img src="shopify-assets/modal.png">
+
+			<br><br>
+
+			<h4 id="shopify-subtitle"> Workflow</h4>
+			<img src="shopify-assets/user-flow.png">
+
+			<br><br>
+
+			<h4 id="shopify-subtitle"> Design V2/Iterating </h4>
+			<p>After exploring options down to how many dots the draggable icon should have, the final design took an abstract route. This was a tradeoff the team decided to take: to sacrifice one-to-one accuracy in order to not require constant maintenance of the component. This way, merchants know not to expect what they see on the page to represent their Facebook page exactly.  </p>
+			<img src="shopify-assets/design-v2.png">
+
+			<br><br>
+
+			<h4 id="shopify-subtitle"> Next Steps </h4>
+			<p>To tailor to new merchants and merchants who are unfamiliar with the feature, it may be a good idea to include a help docs link in the component that includes screenshots explaining what would happen on the Facebook side when they reorder their collections. This is much more scalable because when Facebook changes their UI, all we would need to do is change the screenshot. </p>
+			<p>Since almost all other sales channels have some sort of preview component, the next step is the aim for consistency across channels by adopting a similar pattern to this one. </p>
+
+
+			<footer> 
+				<section> 
+					<hr>
+					<p> 
+						<a href="Nicole_Zhao_Resume.pdf" target="_blank" class="footer-links"><u>RESUME</u></a>&nbsp;&nbsp;&nbsp;
+						<a href="mailto:yy3zhao@edu.uwaterloo.ca" target="_blank" class="footer-links"><u>EMAIL</u></a>&nbsp;&nbsp;&nbsp;
+						<a href="https://github.com/nicolezhao" target="_blank" class="footer-links"><u>GITHUB</u></a>&nbsp;&nbsp;&nbsp;
+					</p>
+					<br>
+					<p class="copyright">Built with &#x2661; by Nicole Zhao </p>
+				</section>
+			</footer>
+
+		</main>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script>
+		   $(document).ready(function(){
+			   $(window).bind('scroll', function() {
+			   var navHeight = $( window ).height() - 70;
+					 if ($(window).scrollTop() > navHeight) {
+						 $('#hello-emoji').addClass('fixed');
+					 }
+					 else {
+						 $('#hello-emoji').removeClass('fixed');
+					 }
+				});
+			});
+		</script>
+	</body>
+</html>
