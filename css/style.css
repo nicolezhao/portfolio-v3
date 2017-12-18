@@ -228,6 +228,10 @@ img {
 	margin-bottom: 0;
 }
 
+#viryl-workflow-img {
+	max-width: 500px;
+}
+
 #me-pic {
 	margin-top: 1.5rem;
 	width: 10em;
