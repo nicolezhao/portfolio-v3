@@ -98,7 +98,7 @@ img {
 
 
 .emoji {
-	font-size: inherit;
+	font-size: 1rem;
 	width: 1.2em;
 }
 
@@ -268,5 +268,11 @@ img {
 .under-construction-emoji {
 	font-size: inherit;
 	width: 2em;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.emoji {
+		font-size: 1.6rem;
+	}
 }
 
