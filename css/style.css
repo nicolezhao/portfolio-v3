@@ -241,7 +241,6 @@ img {
 	width: 5rem;
 }
 
-
 .footer-links {
 	color: #4F4F4F;
 }
@@ -257,3 +256,15 @@ img {
 	font-size: 0.8rem;
 	text-align: center;
 }
+
+/*Temp*/
+.under-construction {
+	padding-top: 15rem;
+	text-align: center;
+}
+
+.under-construction-emoji {
+	font-size: inherit;
+	width: 2em;
+}
+
