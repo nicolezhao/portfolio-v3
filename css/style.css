@@ -23,7 +23,7 @@ h5 {
 }
 
 p {
-	line-height: 170%;
+	line-height: 1.8;
 }
 
 a {
@@ -100,7 +100,6 @@ img {
 .emoji {
 	font-size: inherit;
 	width: 1.2em;
-	min-width: 20px;
 }
 
 .emoji-cool-things {
