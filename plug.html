@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Nicole Zhao - Plug</title>
+    <meta charset=utf-8 >
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.scss" > 
+    <link rel="icon" href="img/favicon1.png" type="image/x-icon">
+
+	</head>
+
+	<div id="viryl-header-div">
+		<img id="viryl-header-pic" src="img/shopify.png">
+	</div>
+
+	<body>	 
+		<main>
+			<a href="index.html"><img id="chev-back" src="img/chev.png"></a>
+			<h1 id="projects-header"> Plug </h1>
+
+			<br>
+
+			<h3> What is Plug?</h3>
+			<p> Plug is an influencer marketing platform aimed at helping Shopify merchants make their first sale by engaging with Instagram influencers in their industry. Plug closes marketing and sale chasm all merchants face when trying to market to the masses by: </p>
+			<ul>
+				<li>Curating a list micro-influencers (in a specific niche) to partner with</li>
+				<li>Providing real-time influencer analytics to make better marketing decisions</li>
+				<li>Using FTC complicant content</li>
+			</ul>
+
+			<br>
+
+			<h3> Role </h3>
+			<p>Plug was built as a React app as part of a 3-day, 3,300-employee company-wide, hackathon and took home first place. I was a front-end developer on a the team of 10. </p>
+
+			<br> 
+
+			<h3> Problem</h3>
+			<p>Between 30-40% of Shopify merchants have not made their first sale. The biggest challenge for our merchants in the coming year is “Who are my customers? How do I market to them?”. In a recent survey, merchants saw the most success by marketing with social media. Although content sharing through personal social media accounts is a great way to market, it does not drive the same amount of traffic as promotion by social media influencers.  With no real easy way to contact influencers, merchants must resort to manual search, email, or direct messaging. </p>
+			<p>If successful contact is made with the influencer, return on investment is unknown and the cost of service varies.</p>
+			
+			<br>
+
+			<h3> Data </h3>
+			<p>Shopify’s 2016 Annual Survey found marketing to be the biggest obstacle merchants faced when starting their business, and that merchants are not able to market their products effectively has increased over the previous year from 9.22% in 2015 to 11.16% in 2016.</p>
+
+			<br>
+
+			<h3> Opportunity </h3>
+			<p>In 2017 Instagram influencer marketing has become a $1 billion industry. Instagram referrals to Shopify onlines stores has grown to 7.5% in less than 2 years. Based on industry trends, Instagram influencer marketing is projected to be a $2 billion industry by 2019. For Shopify, this means that using the criteria of merchants with more than 10 sales (with non-dropshipped products and at at least 1 product with more than 100 units of inventory, there are ~77K merchants fit to use Plug. Based on these numbers and 10% adoption rate and the extra business we’ll attract, Shopify will gain an estimated GMV bookst of ~100 million/month.</p>
+
+			<br>
+
+			<h3> Design </h3>
+			<p><b>User flow: </b></p>
+			<ul>
+				<li>Shopify Merchants log into Plug using their Shopify credentials</li>
+				<li>Merchant search keywords to target more specific influencers (i.e. Fashion + High Fashion + Female + Toronto)</li>
+				<li>Plug will curate a list of influencers</li>
+				<li>Merchants can browse Plug's influencer database and choose to connect with one to one or one to many (campaign style) influencers to work with via email</li>
+			</ul>
+			<ul>
+				<li>Instagram influencers will on-board through a Typeform embedded into our landing page</li>
+				<li>Influencers will authorize themselves through the instagram API to import analytical data</li>
+				<li>Develop influencer admin page for them update user information and create a ‘media kit’ type profile page </li>
+			</ul>
+
+			<p><b>Offer types </b></p>
+			<ul>
+				<li>Flat fee or Product exchange or Revenue Share</li>
+				<li>Payments using Stripe/Paypal</li>
+				<li>Shopify collects service on flat fee connections</li>
+			</ul>
+
+			<br>
+
+			<h3>Selected Screenshots</h3>
+			<p>Landing page</p>
+				<img src="plug-assets/plug1.png"> <br><br>
+			<p>Curated influencers</p>
+				<img src="plug-assets/plug2.png"> <br><br>
+			<p>Influencer data</p>
+				<img src="plug-assets/plug3.png"> <br><br>
+			<p>Collaborate</p>
+				<img src="plug-assets/plug4.png"> 
+
+			<br> 
+
+			<footer> 
+				<section> 
+					<hr>
+					<p> 
+						<a href="Nicole_Zhao_Resume.pdf" target="_blank" class="footer-links"><u>RESUME</u></a>&nbsp;&nbsp;&nbsp;
+						<a href="mailto:yy3zhao@edu.uwaterloo.ca" target="_blank" class="footer-links"><u>EMAIL</u></a>&nbsp;&nbsp;&nbsp;
+						<a href="https://github.com/nicolezhao" target="_blank" class="footer-links"><u>GITHUB</u></a>&nbsp;&nbsp;&nbsp;
+					</p>
+					<br>
+					<p class="copyright">Built with &#x2661; by Nicole Zhao </p>
+				</section>
+			</footer>
+
+		</main>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script>
+		   $(document).ready(function(){
+			   $(window).bind('scroll', function() {
+			   var navHeight = $( window ).height() - 70;
+					 if ($(window).scrollTop() > navHeight) {
+						 $('#hello-emoji').addClass('fixed');
+					 }
+					 else {
+						 $('#hello-emoji').removeClass('fixed');
+					 }
+				});
+			});
+		</script>
+	</body>
+</html>
