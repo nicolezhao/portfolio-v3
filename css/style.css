@@ -263,6 +263,22 @@ img {
 	text-align: center;
 }
 
+.prototype-link {
+	text-align: center;
+}
+
+.wao-gif {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 250px;
+}
+
+.wao-gif__container {
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
 /*Temp*/
 .under-construction {
 	padding-top: 15rem;

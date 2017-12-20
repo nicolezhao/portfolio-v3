@@ -10,13 +10,73 @@
 
 	</head>
 
+	<div id="viryl-header-div">
+		<img id="viryl-header-pic" src="img/projects-header.png">
+	</div>
+
 	<body>	 
 		<main>
-			<div class="under-construction">
-				<img src="img/construction.png" class="under-construction-emoji"> 
-				<p>Under construction... </p>	
+			<a href="index.html"><img id="chev-back" src="img/chev.png"></a>
+			<h1 id="projects-header"> We Are One (WAO) </h1>
+
+			<br>
+
+			<h3> What is WAO?</h3>
+			<p> WAO is a web app that takes in domestic abuse reports and categorizes them by priority using keywords. It was a project that started at a hackathon in March 2017 and took home the 'Best Overall Hack' first place. It is absed off the fundamental idea that no abuse should go unreported. Over the course of 36 hours, my team an I created a prodotype including the website and mobile UI, and a chatbot. </p>
+
+			<p class="prototype-link"><b>Check out our prototype <a href="http://waocanada.site" class="projects-subtitles">here</a></b></p>
+			<br>
+
+			<img src="other-assets/wao-interface.png">
+			<div class="wao-gif__container">
+				<img class="wao-gif" src="other-assets/wao.gif">
 			</div>
 
+			<br>
+
+			<h3>Concept </h3>
+			<p> The continuing motication behind Wao is to provide resources based on the priority and location of the report. Once a report is submitted, it will run through an algorithm to determine the severity of the report using keyword detection. Based on the location of the report, we will then provide short and long-term resources for the victim. </p>
+
+			<br>
+
+			<h3> Role </h3>
+			<p> As the head of development, I was responsible for designing and developing the chatbot and web app UI. </p>
+
+			<br>
+
+			<h3>Next Steps? </h3>
+			<p>WAO has shown proof of concept through the support of Greenhouse (University of Waterloo's social impact incubator) and mentors from Conrad and Communitech. We have developed working prototypes and have since switched gears to focus on user research, exploring the issue more and connecting with community supporters. My team and I wanted to know more about the issue and what people wanted and needed before going further with development.</p>
+
+			<br> 
+
+			<footer> 
+				<section> 
+					<hr>
+					<p> 
+						<a href="Nicole_Zhao_Resume.pdf" target="_blank" class="footer-links"><u>RESUME</u></a>&nbsp;&nbsp;&nbsp;
+						<a href="mailto:yy3zhao@edu.uwaterloo.ca" target="_blank" class="footer-links"><u>EMAIL</u></a>&nbsp;&nbsp;&nbsp;
+						<a href="https://github.com/nicolezhao" target="_blank" class="footer-links"><u>GITHUB</u></a>&nbsp;&nbsp;&nbsp;
+					</p>
+					<br>
+					<p class="copyright">Built with &#x2661; by Nicole Zhao </p>
+				</section>
+			</footer>
+
 		</main>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script>
+		   $(document).ready(function(){
+			   $(window).bind('scroll', function() {
+			   var navHeight = $( window ).height() - 70;
+					 if ($(window).scrollTop() > navHeight) {
+						 $('#hello-emoji').addClass('fixed');
+					 }
+					 else {
+						 $('#hello-emoji').removeClass('fixed');
+					 }
+				});
+			});
+		</script>
 	</body>
 </html>
