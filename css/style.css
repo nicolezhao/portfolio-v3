@@ -342,10 +342,12 @@ img {
 	.block-title {
 		margin-top: 0px;
 		margin-bottom: 5px;
+		text-align: center;
 	}
 
 	.block-subtitle {
 		margin-top: 0px;
+		text-align: center;
 	}
 
 	.block-titles {
