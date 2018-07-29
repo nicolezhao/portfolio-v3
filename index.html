@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" > 
     <link rel="icon" href="img/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 	</head>
 
@@ -20,13 +21,34 @@
 		<main>
 			<img src="img/hi-there.gif" id="hello-emoji" class="hello-emoji">
 			<h1> Nicole Zhao </h1>
-			<p> Hi there! <img src="img/wave.png" class="emoji"> </p> 
-			<p> I'm a web developer and product designer studying Systems Design Engineering at the University of Waterloo. I'm currently looking for a Summer 2018 internship with friendly peeps and a product that I love. </p>
+				<div id="name-rect"></div>
+			<p> Hi there! <img src="img/wave.png" class="emoji"> </p>
+			<p> I'm a <span id="pm-colour">product manager</span> and <span id="design-colour">interaction designer </span>studying Systems Design Engineering at the University of Waterloo. I'm currently looking for a Winter 2019 internship with friendly peeps and a product that I love. </p>
 
 			<br>
-			<h3> <img src="img/suitcase.jpeg" class="emoji"> Where I've worked </h3>
 
-				<section id="work-section">
+			<h3> <img src="img/suitcase.jpeg" class="emoji"> Where I've worked </h3>
+				<div class="group">
+					<a href="shopify.html">
+					    <div class="left work-img">
+					        <img class= "job" src="img/shopify-home.png">
+					        <div class="block-titles">
+					        <h2 class="block-title" id="shopify"> Shopify </h2>
+								<p class="block-subtitle"> Front-end Developer | Fall 2017 Intern </p>
+							</div>
+					    </div>
+					</a>
+					<a href="viryl.html">
+					    <div class="right work-img">
+					        <img class= "job" src="img/viryl-home.png">
+					        <div class="block-titles">
+					        <h2 class="block-title" id="viryl"> Viryl Technologies </h2>
+								<p class="block-subtitle"> Full Stack Web Dev | Winter 2017 Intern </p>
+							</div>
+					    </div>
+					</a>
+				</div>
+				<!-- <section id="work-section">
 					<a href="shopify.html">
 						<article class="work" id="shopify">
 							<h2> Shopify </h2>
@@ -43,7 +65,7 @@
 							<p> Full Stack Web Developer | Winter 2017 Intern </p>
 						</article>
 					</a>
-				</section>
+				</section> -->
 			<br>
 			<h3> <img src="img/laptop.png" class="emoji"> My projects </h3>
 				<section>
