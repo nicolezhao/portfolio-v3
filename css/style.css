@@ -186,10 +186,10 @@ img {
 	display: inline;
 }
 
-#shopify {
+/*#shopify {
 	color: #857FB9;
 }
-
+*/
 
 #shopify-header {
 	color: #857FB9;
@@ -200,11 +200,11 @@ img {
 #shopify-subtitle {
 	color: black;
 }
-
+/*
 #viryl {
 	color: #5AC49E;
 }
-
+*/
 /*#viryl p {
 	color: grey;
 }
@@ -323,6 +323,7 @@ img {
 
 
 
+/********************************* Portfolio *********************************/
 
 
 	.work-img { 
@@ -369,6 +370,10 @@ img {
         display: table;
         clear: both;
     }
+/*    #vidyard {
+    	color: #B2CCD5;
+    }
+*/
     @media screen and (max-width: 480px) {
         .left, .right {
             float: none;
