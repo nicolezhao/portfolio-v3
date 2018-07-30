@@ -226,7 +226,7 @@ img {
 }
 
 #viryl-header-div {
-	height: 8rem;
+	height: 20rem;
 	overflow: hidden;
 }
 
@@ -380,3 +380,26 @@ img {
             width: auto;
         }
     }
+
+
+
+
+
+
+    img, svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+svg {
+  height: 38px;
+  width: 38px;
+  display: inline-block;
+/*}
+#title-left {
+	float: left;
+}
+
+#title-right {
+	float:right;
+}*/
