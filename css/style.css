@@ -380,8 +380,27 @@ img {
             width: auto;
         }
     }
+/*#tilt-test {
+	transform-style: preserve-3d;
+}
 
+ #outter-tilt {
+	background-color: blue;
+	margin: 0 auto;
+	padding-top: 75px;
+	height: 200px;
+	width: 200px;
+transform: translateZ(20px);
+ }
 
+ #inner-tilt {
+	background-color: red;
+	margin: 0 auto;
+	height: 50px;
+	width: 50px;
+ }
+
+*/
 
 
 
@@ -403,3 +422,4 @@ svg {
 #title-right {
 	float:right;
 }*/
+}
