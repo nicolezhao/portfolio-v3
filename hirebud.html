@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123108352-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-123108352-1');
+	</script>
+
+    <title>Nicole Zhao - Hirebud</title>
+    <meta charset=utf-8 >
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" > 
+    <link rel="icon" href="img/favicon1.png" type="image/x-icon">
+
+	</head>
+
+	<div id="viryl-header-div">
+		<!-- <img id="viryl-header-pic" src="img/shopify.png"> -->
+		<img id="viryl-header-pic" src="hirebud-assets/hirebud.png">
+	</div>
+
+	<body>	 
+		<main>
+			<a href="index.html">
+				<!-- <img id="chev-back" src="img/chev.png"> -->
+			</a>
+			<h1 id="hirebud-header" class="page-title"> Hirebud </h1>
+			<p class="page-title"> UI/UX Passion Project | Summer 2018 </p> 
+
+			<br>
+
+			<div class="writing-paragraph">
+				<h4>INTRO</h4>
+				<h2> Problem/Challenge. </h2>
+				<p> Students starting out in their tech career with little experience have a difficult time discovering tech companies to apply to. Since knowing what companies and positions are out there is the first step on the application process, this is a pain point is an important one to address. </p>
+				<p>The challenge is to design a platform for students to easily discover tech internship positions at tech companies, and keep track of their application process. </p>
+			</div>
+
+			<br>
+
+			<div class="writing-paragraph">
+				<h2> My Approach. </h2>
+				<p>Although I was tempted to jump into sketching and wireframing given the short amount of time I had to work on this project, in order to come up with the best design for a consumer facing product like this one, I had to first understand: </p>
+					<ul> 
+						<li>What problem are users currently facing </li>
+						<li>Why are current platforms not working well </li>
+						<li>How can I fit into the desired product-market? </li>
+					</ul>
+					<ol> 
+						<li>Research </li>
+						<li>Testing </li>
+						<li>Setting the stage  </li>
+						<li>Designs</li>
+						<li>Final considerations</li>
+					</ol>
+			</div>
+
+			<br> 
+			<div class="writing-paragraph">
+				<h2> Goals.</h2>
+				<p>The goal is to design a simple web app that focused on: </p>
+				<ol>
+					<li>Reducing complexity — Limit the number of actions on each component and steps in the user’s workflow. </li>
+					<li>Balancing UI and UX — Not everything needs crazy visuals and animations. Although I wanted pleasing visuals, I was primarily concerned with intuitive workflows and UX. </li>
+				</ol>
+			</div>
+
+			<br> 
+
+			<div class="writing-paragraph">
+				<h4>RESEARCH</h4>
+				<h2> User Research.</h2>
+				<p>Although I knew I wanted to make this platform for tech internships, it didn’t necessarily mean only one user type fit into those needs. While thinking of the possible user problems, I began developing some questions I needed to learn from users. For example, I wondered how users are currently looking for tech internships and if they’ve developed workarounds. I also wondered what they valued most in a job (e.g. location, size, experience, pay, etc.). I decided to conduct extensive interviews on 10 of my colleagues and friends who are in the tech space currently in an internship. </p>
+				<p>Here’s what I discovered: </p>
+				<ul>
+					<li>Found very little success cold-applying online, usually needed an referral or “in” from friend/connection that works/worked at the company</li>
+					<li>Current workflow is: hear about a job from a friend → search up LinkedIn recruiter → send recruiter an email to start application process  </li>
+					<li>Pay doesn’t matter as much as experience but if the opportunity came, would still choose to work at a “big name” rather than a startup</li>
+					<li>Manually tracked process of process on whiteboard or paper</li>
+				</ul>
+				<p>Although I was used to creating personas, I wanted to look into user needs from a Jobs-to-be-Done framework, and finding what users would “hire” my product to do. Therefore, instead of having various personas in specific user segments that ranges from a computer science student to a business grad that’s looking to switch careers, I created a focus point with the job-to-be-done: </p>
+				<p id="hirebud-highlight">To know which companies are out there and if they are currently hiring in a specific position. </p>
+			</div>
+
+			<br> 
+			<div class="writing-paragraph">
+				<h2> Competitive Analysis. </h2>
+			</div>
+			<img src=hirebud-assets/comps.png>
+			<div class="writing-paragraph">
+				<p>I did an in depth review of the current market leaders in finding internships: LinkedIn, Glassdoor, Internships.com, Indeed, Intern.supply, and AngelList.  </p>
+				<p>To summarize findings: </p>
+				<ul>
+					<li>Most of these platforms were black holes of information. There are pages of postings that are both relevant and irrelevant in every parameter. Users can be immediately overwhelmed by the amount of information presented to them and build up an expected behaviour of ignoring more of the information that they don’t need. </li>
+					<li>Things become outdated. As soon as these platforms depend on companies to update the postings, or pulling data with queries that aren’t filtered out, information becomes outdated and applications that are no longer open gets linked to forms that no longer exist. And with that many postings, no wonder they can’t keep up. </li>
+					<li>Pain point: many internships do not explicitly post for a certain time period and there’s no good way of filtering by the internship period. </li>
+				</ul>
+			</div>
+
+			<br> 
+
+			<div class="writing-paragraph">
+				<h2> Hierarchical Task Analysis.</h2>
+				<p>I conducted a hierarchical task analysis to better understand and map out how users might go about the process of finding an internship broken down into its simplest steps. </p>
+			</div>
+			<img src="hirebud-assets/hta.jpg">
+
+			<br> 
+			<div class="writing-paragraph">
+				<h4>SETUP</h4>
+				<h2> Workflow. </h2>
+				<p>Knowing one of the major pain points of existing platforms is the amount of clutter and almost overwhelming amount of information on each page, I wanted to reduce that to a minimal experience. Although there are benefits of having everything on one page (filters, list of jobs, job descriptions, apply buttons, etc.) the way that most existing platforms have, I saw greater benefit in grouping actions and splitting them up, so that a user has a limited number of actions on each clear and it’s clear when to move on to the next page to perform another “group” of actions.</p>
+			</div>
+			<br>
+			<div class="writing-paragraph">
+				<h2> Sketches. </h2>
+				<p>I focused on layouts and hierarchy of information when planning my sketches. I wanted information to be presented left to right in order of importance and users can get all the information they need at a glance and have a decision of what action to perform next when action buttons presented themselves. I also focused on limiting at-a-glance information to reduce complexity and confusion. This included hiding filters and carefully choosing what’s most important to the user and only display that. </p>
+			</div>
+			<img src="hirebud-assets/sketches.jpg">
+			<br>
+			<div class="writing-paragraph">
+				<h4>DESIGN</h4>
+				<h2> Visuals. </h2>
+				<p>I chose purple as the primary theme colour because it “combines the calm stability of blue and the fierce energy of red”, and is often associated with ambition. Since green and red will be used for success and failure, and blue for information, purple was the colour that best contrasted the standardardized colours and was still highly accessible. </p>
+				<p>I drew inspiration from Dropbox design by finding simple ways of dealing problems without any distractions. I also opted for a clean almost minimal look without taking away from necessary information and options, you can see this in the spacing of components and simplicity of the decision-making process for users.  </p>
+				<p>I hyper-analyzed iconography to be friendly, welcoming, and contrast existing platforms by being “young and relevant”. </p>
+				<img id="hirebud-logo" src="hirebud-assets/hirebud-logo.png">
+			</div>
+			<br>
+			<div class="writing-paragraph">
+				<h2> Final Wireframes. </h2>
+				<p>After refining sketches, finalizing scope/feature set and putting my ideas on the computer, here are the results. </p>
+
+			<h4>Onboarding/Landing page</h4>
+			<img id="hirebud-mockups" src="hirebud-assets/onboarding.png">
+				<br><br>
+			<h4>Jobs Dashboard</h4>
+			<img id="hirebud-mockups" src="hirebud-assets/jobsdash.png">
+				<br><br>
+			<h4>Jobs Dashboard - The Details</h4>
+			<img id="hirebud-mockups" src="hirebud-assets/dashboard-details.png">
+				<br><br>
+			<h4>Company & Position Profile</h4>
+			<img id="hirebud-mockups" src="hirebud-assets/position.png">
+				<br><br>
+			<h4>Account Settings</h4>
+			<img id="hirebud-mockups" src="hirebud-assets/profile.png">
+				<br><br>
+			<h4>Saved Jobs</h4>
+			<img id="hirebud-mockups" src="hirebud-assets/savedjobs.png">
+				<br><br>
+			<h4>Notifications</h4>
+			<img id="hirebud-mockups" src="hirebud-assets/notifications.png">
+				<br><br>
+			</div>
+
+			<footer> 
+				<section> 
+					<hr>
+					<p> 
+						<a href="Nicole_Zhao_Resume.pdf" target="_blank" class="footer-links"><u>RESUME</u></a>&nbsp;&nbsp;&nbsp;
+						<a href="mailto:yy3zhao@edu.uwaterloo.ca" target="_blank" class="footer-links"><u>EMAIL</u></a>&nbsp;&nbsp;&nbsp;
+						<a href="https://github.com/nicolezhao" target="_blank" class="footer-links"><u>GITHUB</u></a>&nbsp;&nbsp;&nbsp;
+					</p>
+					<br>
+					<p class="copyright">Built with &#x2661; by Nicole Zhao </p>
+				</section>
+			</footer>
+
+		</main>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script>
+		   $(document).ready(function(){
+			   $(window).bind('scroll', function() {
+			   var navHeight = $( window ).height() - 70;
+					 if ($(window).scrollTop() > navHeight) {
+						 $('#hello-emoji').addClass('fixed');
+					 }
+					 else {
+						 $('#hello-emoji').removeClass('fixed');
+					 }
+				});
+			});
+		</script>
+	</body>
+</html>
