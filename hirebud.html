@@ -160,21 +160,42 @@
 				<br><br>
 			</div>
 
-			<h4>Coming soon...</h4>
+		<!-- 	<h4>Coming soon...</h4> -->
 
 			<div class="writing-paragraph">
 				<h2> Design Decisions/Iterations</h2>
+				<p>I quickly iterated based on both user feedback and guerrilla usability testing by asking current students looking for tech jobs as well as eating my dog food. From that I made some design decisions that took out pain points and complexity, narrowed scope, and things that I didn’t realize made no sense at all the first time around. Here’s some design decisions and iterations that came from this process. </p>
+				<ul>
+					<li>I debated back and forth whether or not to have a list to map toggle feature. Although this would provide useful for the use case of finding jobs close to home or in a lassoed area, it would “override” the Location, and making users aware of that added too much complexity. In the end, I decided to scrap the map from the home page and add it to the Saved Jobs section. 
+						<p>Previous version: </p>
+						<img src=hirebud-assets/decision1.png>
+					</li><br>
+					<li>If a company has more than 1 position, I wanted to list the first few then have a <b>show x more</b> link that would take the user to a more detailed list of available positions grouped by company. Although this would have reduced clutter in the home page, ultimately, it didn’t make sense with the action button or displaying the available positions. After iterations, I decided on a <b>1-to-1 relationship between company and position</b>, which meant there will may be multiple rows for a company with many open positions, it made displaying information and calls to action more clear. 
+						<p>Previous version:</p>
+						<img src=hirebud-assets/decision2.png>
+					</li><br>
+					<li>On the <b>Company & Position Profile</b> page, one of the main goals is to give users the ability to be notified about a position becoming available. My original design did not indicate that the position is unavailable and isn’t consistent with the components on the <b></Home page. Therefore, I decided to make <b>“notify me”</b> a secondary action with the primary being <b>“apply”</b> which becomes “unavailable” if the job is unavailable.
+						<p>Previous version:</p>
+						<img src=hirebud-assets/decision3.png>
+					</li><br>
+				</ul>
 			</div>
-
+			<br>
 			<div class="writing-paragraph">
 				<h4>FINAL THOUGHTS</h4>
-				<h2> Future Work. </h2>
+				<h2> Learnings. </h2>
+				<p>A major takeaway, although it sounds obvious here, is to take time at every stage of the design process to ask yourself (or even better, test it on potential users!) if your workflows and decisions make sense, because sometimes things just don’t the first time around. </p>
+				<p>I also admit to sometimes hastily jumping to visual design and putting components together in sketch before I’ve <i>really </i>thought them out. Mockups that didn’t go through iterations of sketching and wireframing just don’t work, and frankly takes up a lot of time.</p>
+				<p>Scope creep is real!</p>
 			</div>
+			<br>
 
 			<div class="writing-paragraph">
-				<h2> Learnings. </h2>
+				<h2> Future Work. </h2>
+				<p>I’d like to spend the next little while before continuing design, to user test on potential users (and non-users) to find pain points and what questions they have at each step of the workflow. I think formal user testing with a high fidelity prototype is very valuable before moving on to adding details. From that I hope to potentially kill features before setting resources to build them (e.g. do users manage their application status on this app or is that an example of where the product ends?).</p>
+				<p>There’s so much more work to come: empty states, errors and dead ends, onboarding, edge cases… </p>
+				<p id="hirebud-highlight">Stay tuned!</p>
 			</div>
-
 
 			<footer> 
 				<section> 
