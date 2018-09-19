@@ -205,6 +205,12 @@ img {
 	color: black;
 }
 
+#vidyard-header{
+	margin-top: 1.5rem;
+	margin-bottom: -0.4em;
+	color: #B3DCBE;
+}
+
 #hirebud-header {
 	color: #5D38DB;
 	margin-top: 1.5rem;
